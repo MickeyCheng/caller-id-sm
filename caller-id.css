@@ -1,7 +1,24 @@
 .search-panel{
     border: solid 2px blue;
+    border-radius: 10px;
     margin-left: 10px;
 }
 .btn-search{
     margin-top: 10px;
+}
+
+#email-search-div{
+    margin: 50px 0 10px 0;
+}
+.center-align{
+    text-align: center;
+}
+
+#btn-create-new-caller{
+    margin-top: 20px;
+}
+
+.error-alert{
+    color:red;
+    font-style: italic
 }
