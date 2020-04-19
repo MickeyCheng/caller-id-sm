@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>caller-id</title>
+        
+        <link rel="stylesheet" href="caller-id.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    </head>
+
+
+    <body>
+        <div class="container">
+            <h3>caller id</h3>
+            <hr>
+            
+            <!-- table -->
+            
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Optum ID</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Joefrey Bartolome</td>
+                        <td>123@yahoo.com</td>
+                        <td>12asdasd</td>
+                        <td>
+                            <button type="button" class="btn btn-danger btn-xs">Log</button>
+                            <button type="button" class="btn btn-primary btn-xs">Edit</button>
+                            <button type="button" class="btn btn-warning btn-xs">Shared</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Joefrey</td>
+                        <td>test@yahoo.com</td>
+                        <td>2133sf</td>
+                        <td>
+                            <button type="button" class="btn btn-danger btn-xs">Log</button>
+                            <button type="button" class="btn btn-primary btn-xs">Edit</button>
+                            <button type="button" class="btn btn-warning btn-xs">Shared</button>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            
+            </table>
+            
+            <div class="search-section">
+                <div class="row">
+                    <div class="search-panel name-search-div col-sm-5">
+                        <p>Search by Name</p>
+                            <label>First Name:</label>
+                            <input type="text" id="text-firstname" class="form-control">
+                            <p class="error-alert" id="error-fname">First Name requires at least 2 characters</p>
+                            <label>Last Name:</label>
+                            <input type="text" id="text-lastname" class="form-control">
+                            <p class="error-alert" id="error-lname">Last Name requires at least 1 character</p>
+                        <button type="button" class="btn btn-primary btn-search" id="btn-namesearch" onclick="btn_namesearch();">Search</button>
+                    </div>
+                    
+                    <div class="search-panel optumid-search-div col-sm-5">
+                       <div>
+                            <p>Optum ID Search</p>
+                            <label>Optum ID:</label>
+                            <input type="text" class="form-control" id="text-optumid">   
+                           <button type="button" class="btn btn-primary btn-search" id="btn-optumsearch" onclick="btn_optumsearch();">Search</button>
+                        </div>
+                        
+                        <div id="email-search-div">
+                            <p>Email Search</p>
+                            <label>Email Address:</label>
+                            <input type="text" class="form-control" id="text-email">
+                             <button type="button" class="btn btn-primary btn-search" id="btn-emailsearch">Search</button>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="center-align">
+                <button type="button" class="btn btn-success" id="btn-create-new-caller">Create New Caller</button>
+            </div>
+        </div>
+    </body>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="caller-id.js"></script>
+</html>
