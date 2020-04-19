@@ -29,16 +29,17 @@ function btn_namesearch(){
     hideErrorNameSearch();
         var getFirstName = document.getElementById('text-firstname').value.length;
         var getLastName = document.getElementById('text-lastname').value.length;
+        if (getFirstName >= 2 && getLastName >= 1){
+                document.getElementById('text-optumid').disabled = false;
+                document.getElementById('btn-optumsearch').disabled = false;                
+        }else{
             if (getFirstName <2 ){
                 document.getElementById('error-fname').style.display = "block";
             }
             if (getLastName <1 ){
                 document.getElementById('error-lname').style.display = "block";
             }
-            if (getFirstName >= 2 && getLastName >= 1){
-                document.getElementById('text-optumid').disabled = false;
-                document.getElementById('btn-optumsearch').disabled = false;                
-            }
+        }
 }
 
 function btn_optumsearch(){
